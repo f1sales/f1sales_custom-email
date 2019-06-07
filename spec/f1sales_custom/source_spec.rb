@@ -6,6 +6,8 @@ RSpec.describe F1SalesCustom::Email::Source do
 
       let(:email_id){ 'website-form' }
 
+      before { allow(described_class).to receive(:all).and_return([ { email_id: 'website-form', name: 'Vendas - SP' } ]) }
+
       it 'returns true' do
         expect(described_class.support?(email_id)).to be_truthy
       end

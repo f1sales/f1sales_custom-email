@@ -2,12 +2,7 @@ module F1SalesCustom
   module Email
     class Source
       def self.all
-        [
-          {
-            email_id: 'website-form',
-            name: 'Vendas - SP'
-          }
-        ]
+        [{}]
       end
 
       def self.support?(email_id)
