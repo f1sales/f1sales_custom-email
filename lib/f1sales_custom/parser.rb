@@ -4,6 +4,9 @@ module F1SalesCustom
       def initialize(email)
         @email = email
       end
+
+      def parse 
+      end
     end
   end
 end
